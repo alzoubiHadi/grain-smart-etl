@@ -1,0 +1,16 @@
+{
+  "name": "grain-silo-smart-agriculture-etl-orchestrator",
+  "version": "1.0.0",
+  "description": "Distributed ETL/Saga orchestrator for grain silo smart agriculture sensors.",
+  "main": "dist/services/EtlOrchestrator.js",
+  "scripts": {
+    "start": "ts-node src/services/EtlOrchestrator.ts",
+    "build": "tsc",
+    "start:compiled": "npm run build && node dist/services/EtlOrchestrator.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
